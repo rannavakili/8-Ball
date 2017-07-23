@@ -1,4 +1,5 @@
 import random
+import time
 
 responses = ["Yes", "No", "Maybe"]
 keep_playing = True
@@ -23,7 +24,11 @@ def user_question():
             break
         else:
             count = count + 1
+            print show_magic_eightball()
+            print "\n....shaking...\n"
+            time.sleep(3)
             print(random.choice(responses))
+            print
             if count == 5:
                 print "You've used all 5 fortunes, good bye"
 
@@ -37,7 +42,18 @@ def closing(user_name):
 def show_magic_eightball():
     """Shows the user a magic 8 ball ascii art"""
 
-    pass
+    return """
+        ,'|`.
+     _    _.-"-"`-.`. _
+    |.`,-' .  .  . ".",|
+    |C`:  . .  . . .,' |
+    | R `._.  . . ,'   |
+    |  A   |"-..-'     |
+    |   Y  |C R A Y O N|
+     `.  O |        _.-"
+       `. N|    _.-"
+         `.|_.
+    """
 
 
 def show_crayons():
