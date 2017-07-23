@@ -59,7 +59,7 @@ Y8GGGGGG8888888@@@@P.....
     `@@@@@@@@@P'.......
 """
 
-def show_magic_eighball_opener():
+def show_magic_eightball_opener():
 
     print """
     
@@ -79,7 +79,7 @@ def show_magic_eighball_opener():
          `'''''''`
          """
 def main():
-    show_magic_eighball_opener()
+    show_magic_eightball_opener()
     show_magic_eightball()
     user = greeting()
     show_magic_eightball()
