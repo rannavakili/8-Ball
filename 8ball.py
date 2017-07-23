@@ -1,15 +1,17 @@
 import random
 import time
 
-responses = ["Yes", "No", "Maybe"]
+responses = ["Yes", "No", "Maybe", "It is certain", "It is decidedly so", "Without a doubt", "You may rely on it" "Most likely", "Outlook good", "Reply hazy try again", "Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", "Don't count on it", "My sources say no", "Outlook not so good", "Very doubtful"]
 keep_playing = True
 
 
 def greeting():
     """Prompts user for their name, greets them"""
 
-    name = raw_input("I see you've come to the magic 8 ball to tell your fortune, what is your name? ")
+    name = raw_input("I see you've come to the magic 8 ball to tell your fortune, what is your name?\n")
+    print
     print "hello {}!".format(name)
+    print
     return name
 
 
@@ -43,36 +45,41 @@ def show_magic_eightball():
     """Shows the user a magic 8 ball ascii art"""
 
     return """
-        ,'|`.
-     _    _.-"-"`-.`. _
-    |.`,-' .  .  . ".",|
-    |C`:  . .  . . .,' |
-    | R `._.  . . ,'   |
-    |  A   |"-..-'     |
-    |   Y  |C R A Y O N|
-     `.  O |        _.-"
-       `. N|    _.-"
-         `.|_.
-    """
+            ____
+    ,dP9CGG88@b,
+  ,IP  _   Y888@@b,
+ dIi  (_)   G8888@b
+dCII  (_)   G8888@@b
+GCCIi     ,GG8888@@@
+GGCCCCCCCGGG88888@@@
+GGGGCCCGGGG88888@@@@...
+Y8GGGGGG8888888@@@@P.....
+ Y88888888888@@@@@P......
+ `Y8888888@@@@@@@P'......
+    `@@@@@@@@@P'.......
+"""
 
-
-def show_crayons():
+def show_magic_eighball_opener():
 
     print """
-        ,'|`.
-     _    _.-"-"`-.`. _
-    |.`,-' .  .  . ".",|
-    |C`:  . .  . . .,' |
-    | R `._.  . . ,'   |
-    |  A   |"-..-'     |
-    |   Y  |C R A Y O N|
-     `.  O |        _.-"
-       `. N|    _.-"
-         `.|_.
-    """
-
+    
+          ......._
+      .-:::::::::::-.
+    .:::::::::::::::::.
+   :::::::' .-. `:::::::
+  :::::::  :   :  :::::::
+ ::::::::  :   :  ::::::::
+ :::::::::._`-'_.:::::::::
+ :::::::::' .-. `:::::::::
+ ::::::::  :   :  ::::::::
+  :::::::  :   :  :::::::
+   :::::::._`-'_.:::::::
+    `:::::::::::::::::'
+      `-:::::::::::-'
+         `'''''''`
+         """
 def main():
-    show_crayons()
+    show_magic_eighball_opener()
     show_magic_eightball()
     user = greeting()
     show_magic_eightball()
